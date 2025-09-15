@@ -1,0 +1,45 @@
+.content-inner.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.content-inner.tools .tools-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.content-inner.tools .tools-list li {
+  font-size: 0.95rem;
+}
+
+.tools-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.content-inner.tools h2 {
+  margin-top: 0;
+}
+
+.python-icon path:first-child {
+  fill: #306998;
+}
+
+.python-icon path:nth-child(2) {
+  fill: #ffd43b;
+}
+
+.aws-icon.dark {
+  fill: #2c3644;
+}
+
+.aws-icon.light {
+  fill: #fffffd;
+}

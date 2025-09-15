@@ -1,0 +1,155 @@
+:root {
+  --font-base: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  /* Tema base (fallback light) */
+  --color-bg: #ffffff;
+  --color-text: #213547;
+
+  --color-bg-soft: #f9f9f9;
+  --color-hover: #f5f5f5;
+
+  /* Estados adicionales (pueden sobreescribirse por tema) */
+  --color-muted: #6b7280;
+  --color-border: #8d8d8d;
+  --color-accent: #646cff;
+  --color-accent-hover: #535bf2;
+  --color-toolbar-bg: #d8d4d24d;
+  --color-toolbar-active-bg: #d8d4d2;
+  --elevated-bg: #f9f9f9;
+
+  --space-xs: 0.25em;
+  --space-sm: 0.5em;
+  --space-md: 1em;
+  --space-lg: 2em;
+  --space-xl: 4em;
+}
+
+/* Tema claro */
+body[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-bg-soft: #f9f9f9;
+  --color-hover: #f5f5f5;
+  --color-text: #212529;
+  --color-muted: #6c757d;
+  --color-border: #8d8d8d;
+  --color-accent: #646cff;
+  --color-accent-hover: #535bf2;
+  --color-toolbar-bg: #d8d4d24d;
+  --color-toolbar-active-bg: #d8d4d2;
+  --elevated-bg: #f9f9f9;
+}
+
+/* Tema oscuro */
+body[data-theme="dark"] {
+  --color-bg: #1a1a1a;
+  --color-bg-soft: #2a2a2a;
+  --color-hover: #333333;
+  --color-text: #f0f0f0;
+  --color-muted: #9ca3af;
+  --color-border: var(--color-text);
+  --color-accent: #8ab4f8;
+  --color-accent-hover: #4285f4;
+  --color-toolbar-bg: #353535;
+  --color-toolbar-active-bg: #444;
+  --elevated-bg: #2a2a2a;
+}
+
+/* Tema personalizado */
+body[data-theme="custom"] {
+  --color-bg: #121212;
+  --color-text: #1db954; /* verde neón */
+  --color-muted: #b3b3b3;
+  --color-border: #819782;
+  --color-accent: #1db954;
+  --color-accent-hover: #1ed760;
+  --color-bg-soft: #222; /* para tarjetas, cards */
+  --color-hover: #333;
+  --color-toolbar-bg: #1f1f1f;
+  --color-toolbar-active-bg: #2c2c2c;
+  --elevated-bg: #1b1f1d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: background-color 0.4s ease, color 0.4s ease,
+    border-color 0.4s ease;
+}
+
+html {
+  font-size: 100%; /* 16px por defecto */
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 93.75%; /* 15px */
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 81.25%; /* 13px */
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 75%; /* 12px */
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  min-width: 320px;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+::placeholder {
+  color: var(--color-muted);
+}

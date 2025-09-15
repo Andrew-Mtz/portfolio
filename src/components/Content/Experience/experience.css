@@ -1,0 +1,26 @@
+.content-inner.experience .job {
+  margin-bottom: 1.5rem;
+}
+
+.content-inner.experience .job h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-inner.experience .job-date {
+  font-size: 0.85rem;
+  color: var(--text, #666);
+}
+
+.content-inner.experience ul {
+  list-style: disc inside;
+  margin: 0;
+}
+
+.content-inner.experience ul > li {
+  list-style: circle;
+  line-height: 1.5em;
+}

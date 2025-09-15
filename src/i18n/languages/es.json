@@ -1,0 +1,178 @@
+{
+  "profile": {
+    "hello": "¡Saludar!",
+    "sendMessage": "Enviar mensaje",
+    "available": "Disponible de",
+    "dayTime": "martes, 18:14",
+    "soon": "Próximamente",
+    "mini-desc": "Apasionado por la creación de soluciones que combinan tecnología y diseño, busco siempre evolucionar, aprender y aportar valor real a cada proyecto.",
+    "location": "Montevideo, Uruguay",
+    "locale": "es-UY"
+  },
+  "navigation": {
+    "toolbar": {
+      "grid": "Vista de grilla",
+      "list": "Vista de lista",
+      "column": "Vista de columnas",
+      "back": "Volver"
+    },
+    "empty": "Esta carpeta está vacía."
+  },
+  "content": {
+    "selectFile": "Seleccioná un archivo para verlo aquí.",
+    "viewImage": "Ver imagen",
+    "experience": {
+      "title": "Experiencia",
+      "jobs": [
+        {
+          "company": "Dralmey",
+          "date": "Mayo 2024 – Presente",
+          "items": [
+            "Implementación de mejoras de UI desde el diseño hasta producción.",
+            "Desarrollo de endpoints API y procesamiento de datos con <strong>Python</strong> y <strong>FastAPI</strong>.",
+            "Construcción de una CLI interna para una librería personalizada usando <strong>Commander</strong>, <strong>Zod</strong>, <strong>Prompts</strong> y <strong>Chalk</strong> para optimizar flujos de desarrollo.",
+            "Diseño y mantenimiento de esquemas SQL y NoSQL con <strong>PostgreSQL</strong> y <strong>MongoDB</strong>.",
+            "Implementación de APIs backend en <strong>Java</strong> para un sistema interno de control de inventario.",
+            "Desarrollo y mantenimiento de <strong>componentes React</strong> y flujos de usuario.",
+            "Apoyo en la integración y onboarding de nuevos miembros del equipo."
+          ]
+        },
+        {
+          "company": "Baufest",
+          "date": "Ago 2022 – Abr 2024",
+          "items": [
+            "Planificación y desarrollo de una aplicación en <strong>Java (Spring)/Angular.js</strong>.",
+            "Creación de scripts en <strong>Python</strong> para automatizar procesos manuales.",
+            "Mantenimiento y mejora de una aplicación en <strong>Java/Angular.js</strong>.",
+            "Mantenimiento y mejora de código <strong>C#</strong> que no funcionaba correctamente."
+          ]
+        },
+        {
+          "company": "Globant",
+          "date": "Mar 2020 – Jul 2022",
+          "items": [
+            "Creación de un simulador de préstamos con <strong>React</strong> y <strong>TypeScript</strong>.",
+            "Participación en un proyecto interno llamado \"LabsIdeas\"."
+          ]
+        }
+      ]
+    },
+    "aboutMe": {
+      "title": "Sobre mí",
+      "desc": "Hola, soy <strong>Andrew Martínez</strong>, desarrollador full-stack con más de 4 años de experiencia. Me especializo en crear soluciones personalizadas que equilibran eficiencia, calidad y buenas prácticas. Me apasionan los desafíos técnicos, aprender nuevas tecnologías y aportar valor real a cada proyecto.",
+      "areas": "Áreas de experiencia",
+      "skills": [
+        "Frontend Development",
+        "Backend Development",
+        "Bases de Datos SQL"
+      ],
+      "tech": "Tecnologías destacadas",
+      "technologies": [
+        "JavaScript, TypeScript, React, Vite, HTML, CSS",
+        "Node.js, Java (Spring Boot), Python (FastAPI)",
+        "PostgreSQL, MongoDB, GitHub, GitLab, AWS"
+      ],
+      "values": "Lo que valoro",
+      "valuesList": [
+        "Código limpio y Arquitectura Limpia",
+        "Buenas prácticas (linters, formatters, testing)",
+        "Accesibilidad y rendimiento óptimos",
+        "Diseño visual atractivo y funcional"
+      ],
+      "softSkills": "Soft Skills",
+      "softSkillsList": [
+        "Atención meticulosa al detalle",
+        "Comunicación clara y efectiva",
+        "Trabajo en equipo y mentoría",
+        "Resolución proactiva de problemas",
+        "Capacidad de análisis crítico"
+      ]
+    },
+    "tools": "Herramientas y tecnologías",
+    "readme": {
+      "title": "Sobre este Portfolio",
+      "intro": "Bienvenido a mi portfolio personal, un espacio que utilizo como laboratorio para experimentar con tecnologías web modernas y al mismo tiempo mostrar mis proyectos y habilidades. Está en continua evolución y todavía no está 100% terminado.",
+      "statusTitle": "📌 Estado actual",
+      "status": [
+        "Interfaz principal (UI) completamente funcional.",
+        "Vistas <strong>Resume</strong> y <strong>Simplified</strong> serán añadidas próximamente.",
+        "Tema <strong>Custom</strong> usa una paleta neón que refleja mis gustos personales, por lo que puede que no encaje con todos los estilos.",
+        "Las páginas <strong>404</strong> y <strong>Próximamente</strong> tienen joysticks que caen como pequeño Easter egg interactivo."
+      ],
+      "goalTitle": "🎯 Objetivo",
+      "goalIntro": "Este portfolio cumple dos objetivos principales:",
+      "goals": [
+        "Mostrar mis habilidades de <strong>full-stack</strong> (React, Node.js, Java, Python…) y buenas prácticas (Clean Code, accesibilidad, testeo, arquitectura limpia).",
+        "Servir como carta de presentación a potenciales empleadores y clientes, mostrando proyectos reales con demos y enlaces al código."
+      ],
+      "nextTitle": "🔧 Próximos pasos",
+      "next": [
+        "Agregar contenido real a las vistas Resume y Simplified.",
+        "Mejorar la experiencia responsive en móviles y tablets.",
+        "Publicar en un dominio propio y compartirlo en mi perfil."
+      ],
+      "outro": "¡Gracias por visitar! Si ves algo que crees que puedo mejorar, no dudes en contactarme."
+    },
+    "tictactoe": {
+      "title": "Ta-Te-Ti con IA",
+      "description": "Juego clásico de Ta-Te-Ti con modo local para 2 jugadores y modo contra IA con dos niveles de dificultad. La IA utiliza un algoritmo de poda para jugar estratégicamente: en modo fácil comete errores deliberados para permitir la victoria humana, y en modo difícil juega óptimamente (solo empata).",
+      "featuresTitle": "Características",
+      "features": [
+        "Modo 2 jugadores en local.",
+        "Modo IA con niveles “Fácil” y “Difícil”.",
+        "Gestión de estado con Context API y React Providers.",
+        "Optimizado con pnpm para un desarrollo más rápido."
+      ],
+      "techTitle": "Tecnologías",
+      "technologies": [
+        "React",
+        "pnpm",
+        "JavaScript / TypeScript",
+        "Context API"
+      ],
+      "liveDemo": "▶ Ver demo en vivo",
+      "sourceCode": "📂 Código en GitHub"
+    },
+    "carwash": {
+      "title": "CarFlash – Landing Page para Lavadero de Autos",
+      "description": "Landing page moderna y responsive para un lavadero de autos ficticio, desarrollada con Astro. Muestra navegación simple, scroll suave y diseño limpio, destacando una arquitectura estática de alto rendimiento.",
+      "featuresTitle": "Características",
+      "features": [
+        "Página única con desplazamiento suave.",
+        "Navegación clara y estructura visual limpia.",
+        "Componentes reutilizables en Astro.",
+        "Deploy rápido en Vercel."
+      ],
+      "techTitle": "Tecnologías",
+      "technologies": ["Astro", "HTML, CSS, JavaScript", "Vercel (hosting)"],
+      "liveDemo": "▶ Ver demo en vivo",
+      "sourceCode": "📂 Código en GitHub"
+    }
+  },
+  "footer": {
+    "createdBy": "Creado por Andrew · v1.0",
+    "language": {
+      "es": "Español",
+      "en": "Inglés"
+    },
+    "theme": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "custom": "Personalizado"
+    },
+    "view": {
+      "ui": "UI",
+      "resume": "Curriculum",
+      "simplified": "Simplificado"
+    }
+  },
+  "notFound": {
+    "title": "¡Ups! Esta página no existe",
+    "button": "Volver al inicio"
+  },
+  "comingSoon": {
+    "title": "Próximamente",
+    "description": "Estamos trabajando en algo increíble. ¡Volvé pronto para verlo!",
+    "button": "Volver al inicio"
+  }
+}

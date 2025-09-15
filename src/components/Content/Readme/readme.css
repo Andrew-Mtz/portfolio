@@ -1,0 +1,28 @@
+.content-inner.readme {
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding-bottom: 0;
+}
+
+.content-inner.readme h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.content-inner.readme h3 {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.content-inner.readme ul {
+  margin-left: 1.5rem;
+
+  li {
+    list-style: outside;
+  }
+}
+
+.content-inner.readme p {
+  margin: 1rem 0;
+}

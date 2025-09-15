@@ -1,0 +1,194 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 0.95rem;
+}
+
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--color-border);
+  border-top: 1px dashed var(--color-border);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.navigation-body {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  .navigation-item {
+    box-sizing: border-box;
+  }
+}
+
+.navigation-body .navigation-item:hover {
+  background-color: var(--color-hover);
+}
+
+/* Vista Grid */
+.navigation-body.grid {
+  gap: 1rem;
+}
+
+.navigation-body.grid .navigation-item.selected {
+  background-color: var(--color-hover);
+  border: 1px solid var(--color-border);
+}
+
+.navigation-body.grid .navigation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3125rem;
+  width: 6.25rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  user-select: none;
+}
+
+.navigation-body.grid .navigation-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.navigation-name {
+  font-size: 0.85rem;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+/* Vista List */
+.navigation-body.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navigation-body.list .navigation-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navigation-body.list .navigation-name {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 0; /* Sin separación como en grid */
+}
+
+.navigation-body.list .navigation-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Columns View */
+.navigation-body.columns {
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding: 0.5rem;
+  gap: 1rem;
+  overflow-x: clip;
+}
+
+.navigation-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 150px;
+  max-width: 200px;
+  background-color: var(--color-bg-soft);
+  padding: 0.5rem;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.navigation-column {
+  opacity: 0;
+  transform: translateX(10px);
+  animation: fadeInColumn 0.3s ease forwards;
+}
+
+@keyframes fadeInColumn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.navigation-body.columns .navigation-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation-body.columns .navigation-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.navigation-body.columns .navigation-name {
+  font-size: 0.7rem;
+  text-align: left;
+  margin-top: 0; /* Sin separación como en grid */
+}
+
+.navigation-empty {
+  padding: 1rem;
+  color: #777;
+  font-style: italic;
+  text-align: center;
+}
+
+.toolbar {
+  background-color: var(--color-toolbar-bg, #d8d4d24d);
+  border-radius: 0.31rem;
+  display: flex;
+}
+
+.toolbar button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 0;
+  width: 2.19em;
+  height: 1.46em;
+}
+
+.toolbar button:hover {
+  opacity: 1;
+}
+
+.toolbar .active {
+  opacity: 1;
+  font-weight: bold;
+  background-color: var(--color-toolbar-active-bg, #d8d4d2);
+  border-radius: 0.31rem;
+}

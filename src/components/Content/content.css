@@ -1,0 +1,39 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px dashed var(--color-border);
+  height: 100%;
+}
+
+.content-empty {
+  font-style: italic;
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 2rem;
+  color: #888;
+}
+
+.content-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.content-inner h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.content-inner h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.content-inner ul > li {
+  text-align: start;
+}

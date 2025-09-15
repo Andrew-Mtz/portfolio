@@ -1,0 +1,136 @@
+.profile-v2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  overflow: visible;
+}
+
+/* Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-avatar {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 1px dashed var(--color-border);
+  object-fit: fill;
+}
+
+.profile-info {
+  padding-top: 0.63rem;
+  padding-bottom: 0.63rem;
+  gap: 0.63rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.profile-info p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  line-height: 0.9;
+}
+
+.profile-widgets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px dashed var(--color-border);
+  border-bottom: 1px dashed var(--color-border);
+}
+
+/* Cards */
+.profile-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.profile-card {
+  flex: 1;
+  border: 1px dashed var(--color-border);
+  border-radius: 8px;
+  padding: 0.8rem;
+  text-align: center;
+  background-color: var(--color-bg-soft);
+}
+
+.profile-card.clickable:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--color-border);
+}
+
+.profile-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+.profile-card strong {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+/* Placeholder */
+.profile-placeholder {
+  border: 1px dashed var(--color-border);
+  padding: 4rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 100%;
+}
+
+/* Bio */
+.profile-bio {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.4;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+/* Localización */
+.profile-location {
+  font-weight: bold;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+  .profile-placeholder {
+    display: none;
+  }
+
+  .profile-location {
+    display: none;
+  }
+}

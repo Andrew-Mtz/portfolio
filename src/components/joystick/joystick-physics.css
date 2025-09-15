@@ -1,0 +1,18 @@
+/* joystick-physics.css */
+.joystick-scene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.joystick {
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  opacity: 1;
+  transition: transform 0.2s ease;
+}

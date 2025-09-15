@@ -1,0 +1,8 @@
+.content-inner.about-me p {
+  margin-top: 1rem;
+}
+
+.content-inner.about-me ul > li {
+  list-style: disc;
+  line-height: 1.5em;
+}
